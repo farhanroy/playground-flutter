@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
+import 'utils/themes.dart';
 import 'utils/routers.dart';
 
 class App extends StatelessWidget {
@@ -7,13 +9,18 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Riverpod Marvel',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      title: 'Riverpod',
+      theme: themeData(Themes.lightTheme),
       onGenerateRoute: Routers.generateRoute,
       initialRoute: '/',
+    );
+  }
+
+  ThemeData themeData(ThemeData theme) {
+    return theme.copyWith(
+      textTheme: GoogleFonts.sourceSansProTextTheme(
+        theme.textTheme,
+      ),
     );
   }
 }
