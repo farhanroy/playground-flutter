@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/src/screens/splash_screen.dart';
-import 'package:marvel/src/utils/routers.dart';
+
+import 'utils/routers.dart';
 
 class App extends StatelessWidget {
   // This widget is the root of your application.

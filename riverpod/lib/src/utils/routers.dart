@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/src/screens/detail_screen.dart';
-import 'package:marvel/src/screens/home_screen.dart';
-import 'package:marvel/src/screens/splash_screen.dart';
+
+import '../view/screens/detail_screen.dart';
+import '../view/screens/home_screen.dart';
+import '../view/screens/splash_screen.dart';
 
 class Routers {
   static Route<dynamic> generateRoute(RouteSettings settings) {
